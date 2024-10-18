@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../../assets/logo.png'
 import '../../App.scss';
 
-const Header : React.FC = () => {
+const Homepage : React.FC = () => {
 
     return (
         <>
@@ -27,4 +27,4 @@ const Header : React.FC = () => {
     )
 }
 
-export default Header;
+export default Homepage;

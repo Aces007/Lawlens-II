@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import './index.css';
 import './App.scss';
-import Header from "./components/Homepage/Header.tsx"
+import Homepage from "./components/Homepage/Homepage.tsx"
 
 function App() {
 
   return (
     <div>
-      <Header />
+      <Homepage />
     </div>
   )
 }
