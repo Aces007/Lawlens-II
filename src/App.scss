@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /*Fonts*/
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /*Main Background*/
+    --clr-main-accent: #231f20;
+
+    /* Gradient */
+    --clr-gr-1: #dbdae1;
+    --clr-gr-2: #a3aaba;
+
+    --clr-percent-bg: #555;
+
+
+    /*#region Design Colors*/
+        --clr-highlight: #007bff;  
+        --clr-highlight-2: #0056b3;  
+        --clr-highlight-3: #6f42c1; 
+        --clr-highlight-4: #00c49a;
+        --clr-highlight-5: #004080; 
+
+    /*#endregion Design Colors*/
+    
+    /*#region Font Color Palette */
+    --clr-primary: #fff;
+    --clr-secondary: #F0F0F0;
+    --clr-accent: #333333;
+    --clr-text: #000000;
+    /*#endregion Font Color Palette */
+
+
+/*#endregion Variables */
+}
+
+
+/*#region Header */
+.header_cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 240px;
+}
+
+#logo_img {
+    width: 90px;
+    height: 90px;
+}
+
+.infScroll_cont {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    border: 2px solid var(--clr-main-accent);
+    background-color: var(--clr-primary);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infScroll_text {
+    font-family: var(--ff-roboto);
+    color: var(--clr-main-accent);
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*#endregion Header */
+
+/*#region Home */
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+}
+
+#logo_txt {
+    text-align: center;
+    font-size: 200px;
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    margin: 0;
+}
+
+#logo_quote {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--ff-roboto);
+    font-weight: bold;
+    margin: 0;
+}
+/*#endregion Home */
