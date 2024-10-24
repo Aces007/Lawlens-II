@@ -41,15 +41,15 @@ const Homepage : React.FC = () => {
             </div>
 
             <div className="home_cont">
-            {currentSection === 'home' && (
-                <div className="home_content">
-                    <h1 id='logo_txt'>LAWLENS</h1>
-                    <h3 id='logo_quote'>Empowering Creativity & Redefining Standards</h3>
-                </div>
-            )}
-            {currentSection === 'about' && <About />}
-            {currentSection === 'experience' && <Experience />}
-            {currentSection === 'portfolio' && <Portfolio />}
+                {currentSection === 'home' && (
+                    <div className="home_content">
+                        <h1 id='logo_txt'>LAWLENS</h1>
+                        <h3 id='logo_quote'>Empowering Creativity & Redefining Standards</h3>
+                    </div>
+                )}
+                {currentSection === 'about' && <About />}
+                {currentSection === 'experience' && <Experience />}
+                {currentSection === 'portfolio' && <Portfolio />}
             </div>
         </>
     )
