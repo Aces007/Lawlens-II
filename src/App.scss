@@ -130,7 +130,7 @@ html {
 /*#region Nav Menu */
 .menu {
     position: fixed;
-    top: 15px;
+    top: 35px;
     left: -100%;
     transform: translateX(100%);
     width: 400px;
@@ -146,11 +146,12 @@ html {
         gap: 40px;
         justify-content: center;
 
-        li {
+        .link_btns {
             margin: 20px 0;
             font-size: 18px;
             font-family: var(--ff-maison_bold);
             cursor: pointer;
+            color: var(--clr-primary);
 
             &:hover {
                 text-decoration: line-through;
@@ -192,3 +193,54 @@ html {
     margin: 0;
 }
 /*#endregion Home */
+
+
+/*region About */
+.about_quote {
+    font-family: var(--ff-maison_black);
+}
+
+.about_quote_2 {
+    font-family: var(--ff-maison_bold);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.span_words {
+    font-size: 6rem;
+    font-family: var(--ff-maison_black);
+}
+
+.para_1 {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 90%;
+    margin: 20rem;
+}
+.para_2 {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 90%;
+    margin: 20rem;
+}
+.para_3 {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 90%;
+    margin: 20rem;
+}
+.para_4 {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 90%;
+    margin: 20rem;
+}
+/*endregion About */
