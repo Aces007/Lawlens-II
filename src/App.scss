@@ -25,6 +25,10 @@
     font-family: 'MaisonNeue Bold';
     src: url(Assets/fonts/maison-neue/MaisonNeueExtendedDemi.otf) format('opentype'); 
 }
+@font-face {
+    font-family: 'MaisonNeue Regular';
+    src: url(Assets/fonts/maison-neue/MaisonNeueThin.otf) format('opentype'); 
+}
 /*#endregion Import */
 
 
@@ -36,6 +40,7 @@
     --ff-maison_med: 'MaisonNeue Medium', sans-serif;
     --ff-maison_black: 'MaisonNeue Black', sans-serif;
     --ff-maison_bold: 'MaisonNeue Bold', sans-serif;
+    --ff-maison_regular: 'MaisonNeue Regular', sans-serif;
 
     /*Main Background*/
     --clr-main-accent: #231f20;
@@ -272,3 +277,104 @@ html {
 }
 
 /*endregion About */
+
+/*region Experience */
+.experience_cont {
+    padding: 1rem;
+    margin-left: 5rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 2px var(--clr-percent-bg) solid;
+}
+
+.exp_labels {
+    font-family: var(--ff-maison_black);
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.circle_id {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -35px;
+}
+    .icon_id {
+        color: var(--clr-text);
+    }
+
+.educ_content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .educ_det {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .educ_level {
+        font-family: var(--ff-maison_bold);
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .educ_school {
+        font-family: var(--ff-maison_med);
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .educ_dates {
+        font-family: var(--ff-maison_regular);
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+.progress_content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+    .progress_det {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .prog_level {
+        font-family: var(--ff-maison_bold);
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .prog_year {
+        font-family: var(--ff-maison_med);
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .prog_skills {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: var(--ff-maison_regular);
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+/*endregion Experience */
