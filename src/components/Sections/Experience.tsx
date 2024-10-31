@@ -7,15 +7,12 @@ import highschool from "../../assets/about_journey/previews/high_school.jpg";
 import seniorhigh from "../../assets/about_journey/previews/senior_high.jpg";
 import college from "../../assets/about_journey/previews/college.jpg";
 import gdsc from "../../assets/about_journey/previews/gdsc.jpg";
-import unity from "../../assets/about_journey/previews/unity.png";
+import unity from "../../assets/about_journey/previews/unity1.jpg";
 import marvillMulti from "../../assets/about_journey/previews/marvillMulti.jpg";
-import revizio from "../../assets/about_journey/previews/revizio.png";
-
-
+import revizio from "../../assets/about_journey/previews/revizio.jpg";
 
 const Experience = () => {
     const [hoverImage, setHoverImage] = useState<string | null>(null);
-
 
     const education = [
         {
