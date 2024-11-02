@@ -503,4 +503,72 @@ html {
     text-transform: uppercase;
     opacity: 70%;
 }
+
+.multi_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+
+.ig_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yt_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#multi_label {
+    font-family: var(--ff-maison_demi);
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.multi_content_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64rem;
+    position: relative;
+    top: -6rem;
+
+    .startDate {
+        font-family: var(--ff-maison_med);
+        font-size: 1rem;
+        text-transform: uppercase;
+        opacity: 60%;
+    }
+
+
+    .projBase {
+        font-family: var(--ff-maison_med);
+        font-size: 1rem;
+        text-transform: uppercase;
+        opacity: 60%;
+    }
+}
+
+.multi_slider {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.multi_embed {
+    border-radius: 10px;
+    max-width: auto;
+    max-height: 600px;
+}
+
+.video_frame {
+    border-radius: 10px;
+    height: 500px;
+}
 /*endregion Portfolio */
