@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
-    font-family: 'Univers';
-    src: url(Assets/fonts/univers/UniversRegular.ttf) format('truetype'),
-        url(Assets/fonts/univers/UniversBold.ttf) format('truetype'),
-        url(Assets/fonts/univers/UniversCnBold.ttf) format('truetype'),
-        url(Assets/fonts/univers/UniversCnRg.ttf) format('truetype'),
-        url(Assets/fonts/univers/UniversLight.ttf) format('truetype');
-}
-@font-face {
     font-family: 'MaisonNeue Black';
     src: url(Assets/fonts/maison-neue/MaisonNeueBlack.otf) format('opentype');
 }
@@ -23,11 +15,27 @@
 }
 @font-face {
     font-family: 'MaisonNeue Bold';
-    src: url(Assets/fonts/maison-neue/MaisonNeueExtendedDemi.otf) format('opentype'); 
+    src: url(Assets/fonts/maison-neue/MaisonNeueExtendedBold.otf) format('opentype'); 
 }
 @font-face {
     font-family: 'MaisonNeue Regular';
-    src: url(Assets/fonts/maison-neue/MaisonNeueThin.otf) format('opentype'); 
+    src: url(Assets/fonts/maison-neue/MaisonNeueBook.otf) format('opentype'); 
+}
+@font-face {
+    font-family: 'MonaSans Bold';
+    src: url(Assets/fonts/monasans/mona/OTF/MonaSans-Bold.otf) format('opentype'); 
+}
+@font-face {
+    font-family: 'MonaSans Regular';
+    src: url(Assets/fonts/monasans/mona/OTF/MonaSans-Regular.otf) format('opentype'); 
+}
+@font-face {
+    font-family: 'MonaSans Black';
+    src: url(Assets/fonts/monasans/mona/OTF/MonaSans-Black.otf) format('opentype'); 
+}
+@font-face {
+    font-family: 'MonaSans Medium';
+    src: url(Assets/fonts/monasans/mona/OTF/MonaSans-Medium.otf) format('opentype'); 
 }
 /*#endregion Import */
 
@@ -35,12 +43,15 @@
 :root {
     /*Fonts*/
     --ff-roboto: 'Roboto', sans-serif;
-    --ff-univers: 'Univers', sans-serif;
     --ff-maison_demi: 'MaisonNeue Demibold', sans-serif;
     --ff-maison_med: 'MaisonNeue Medium', sans-serif;
     --ff-maison_black: 'MaisonNeue Black', sans-serif;
     --ff-maison_bold: 'MaisonNeue Bold', sans-serif;
     --ff-maison_regular: 'MaisonNeue Regular', sans-serif;
+    --ff-mona_med: 'MonaSans Medium', sans-serif;
+    --ff-mona_black: 'MonaSans Black', sans-serif;
+    --ff-mona_regular: 'MonaSans Regular', sans-serif;
+    --ff-mona_bold: 'MonaSans Bold', sans-serif;
 
     /*Main Background*/
     --clr-main-accent: #231f20;
@@ -284,6 +295,7 @@ html {
     font-size: 8rem;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -410,7 +422,8 @@ html {
     font-size: 8rem;
     text-transform: uppercase;
     text-align: center;
-    margin-block: 5rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 .portfolio_cont {
@@ -572,3 +585,115 @@ html {
     height: 500px;
 }
 /*endregion Portfolio */
+
+
+/*region Contact */
+#contact_quote {
+    font-family: var(--ff-maison_black);
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_quote span {
+    font-family: var(--ff-maison_black);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.contact_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 5rem
+}
+
+.contact_content {
+    display: grid;
+    grid-template-columns: 1.4fr 1.6fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #292425;
+    border-radius: 10px;
+    padding-inline: 1.2rem;
+    width: 900px;
+    height: 450px;
+    overflow: hidden; 
+}
+
+.contact_content .left {
+    overflow: hidden;
+}
+
+.contact_content .left img {
+    width: 100%;
+    height: 750px;
+    margin-left: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact_content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.contact_content .right h1 {
+    font-family: var(--ff-mona_bold);
+    font-size: 38px;
+}
+
+.contact_content .right #creator_label {
+    font-family: var(--ff-mona_regular);
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.contact_content .right #creator_quote {
+    font-family: var(--ff-mona_bold);
+    font-size: 35px;
+    opacity: 50%;
+}
+
+.contact_content .right .letsTalk {
+    border: 1px solid var(--clr-highlight-2);
+    color: var(--clr-primary);
+    font-family: var(--ff-mona_med);
+    padding-block: 15px;
+    padding-inline: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.contact_content .right .letsTalk:hover {
+    background: linear-gradient(90deg, rgba(94,27,137,1) 20%, rgba(44,140,244,1) 80%); 
+    opacity: 80%;
+}
+
+.contact_content .right .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_content .right .socials .social_icons { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 20px;
+}
+
+.social_icons .socials_id {
+    color: var(--clr-primary);
+    opacity: 70%;
+    cursor: pointer;
+}
+/*endregion Contact */
