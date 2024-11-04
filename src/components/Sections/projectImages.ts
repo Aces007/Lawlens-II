@@ -27,6 +27,25 @@ import mgs2 from '../../assets/projects/ig_photos/MGS02.jpg';
 import mountains from '../../assets/projects/ig_photos/Mountains Version 2.jpg';
 import paupau from '../../assets/projects/ig_photos/Paupau-Blurred.jpg';
 import orton from '../../assets/projects/ig_photos/Randy-Refined.jpg';
+import everlasting from '../../assets/projects/ig_photos/Everlasting.jpg';
+import thestreet from '../../assets/projects/ig_photos/the_street.jpg';
+import china from '../../assets/projects/ig_photos/china_refined.jpg';
+import mountainsBlue from '../../assets/projects/ig_photos/Mountain_Refined.jpg';
+import chineseTaxi from '../../assets/projects/ig_photos/Not Chinese Taxi.jpg';
+import retro from '../../assets/projects/ig_photos/Retro.jpg';
+import warmNight from '../../assets/projects/ig_photos/Warm.jpg';
+import cool from '../../assets/projects/ig_photos/Cool.jpg';
+import simplicity from '../../assets/projects/ig_photos/Simplicity.jpg';
+import warm from '../../assets/projects/ig_photos/Warm Sunny Day.jpg';
+import cold from '../../assets/projects/ig_photos/Cold Sunny Day.jpg';
+import yougotTwo from '../../assets/projects/ig_photos/You got two.jpg';
+import grab from '../../assets/projects/ig_photos/grab.jpg';
+import doubleMe from '../../assets/projects/ig_photos/Double Exposure Me.jpg';
+import native from '../../assets/projects/ig_photos/Girl_Native-ReEnhanced.jpg';
+import top from '../../assets/projects/ig_photos/Mountain Top - Adjusted.jpg';
+import mountainView from '../../assets/projects/ig_photos/Mountain View-Refined.jpg';
+
+
 
 
 export const images = {
@@ -59,5 +78,22 @@ export const multimedia = {
     mgs2,
     mountains,
     paupau,
-    orton
+    orton,
+    everlasting,
+    thestreet,
+    china,
+    mountainsBlue,
+    chineseTaxi,
+    retro,
+    warmNight,
+    cool,
+    simplicity,
+    warm,
+    cold, 
+    yougotTwo,
+    grab,
+    doubleMe,
+    native,
+    top,
+    mountainView,
 }
