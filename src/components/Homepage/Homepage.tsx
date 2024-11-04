@@ -7,6 +7,7 @@ import Experience from '../Sections/Experience';
 import Portfolio from '../Sections/Portfolio';
 import Contact from '../Contact&Footer/Contact';
 import Footer from '../Contact&Footer/Footer';
+import NavLinks from '../NavLinks';
 
 const Homepage : React.FC = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -31,12 +32,7 @@ const Homepage : React.FC = () => {
                 </div>
 
                 <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <ul>
-                        <li><Link to="home" smooth={true} duration={500} onClick={toggleMenu} className='link_btns'>HOME</Link></li>
-                        <li><Link to="about" smooth={true} duration={500} onClick={toggleMenu} className='link_btns'>ABOUT</Link></li>
-                        <li><Link to="experience" smooth={true} duration={500} onClick={toggleMenu} className='link_btns'>EXPERIENCE</Link></li>
-                        <li><Link to="portfolio" smooth={true} duration={500} onClick={toggleMenu} className='link_btns'>PORTFOLIO</Link></li>
-                    </ul>
+                    <NavLinks onClick={toggleMenu} className='link_btns'/>
                 </div>
             </div>
 
