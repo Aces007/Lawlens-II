@@ -84,7 +84,24 @@ const Portfolio = () => {
         multimedia.mgs2,
         multimedia.mountains,
         multimedia.paupau,
-        multimedia.orton
+        multimedia.orton,
+        multimedia.everlasting,
+        multimedia.thestreet,
+        multimedia.china,
+        multimedia.mountainsBlue,
+        multimedia.chineseTaxi,
+        multimedia.retro,
+        multimedia.warmNight,
+        multimedia.cool,
+        multimedia.simplicity,
+        multimedia.warm,
+        multimedia.cold,
+        multimedia.yougotTwo,
+        multimedia.grab,
+        multimedia.doubleMe,
+        multimedia.native,
+        multimedia.top,
+        multimedia.mountainView,
     ]
 
     const ytVids = [
