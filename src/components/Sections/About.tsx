@@ -6,9 +6,9 @@ import journey_2 from '../../assets/about_journey/journey_2.jpg';
 import journey_3 from '../../assets/about_journey/journey_3.jpg';
 import journey_4 from '../../assets/about_journey/journey_4.jpeg';
 import journey_5 from '../../assets/about_journey/journey_5.jpg';
-import journey_6 from '../../assets/about_journey/journey_6.png';
+// import journey_6 from '../../assets/about_journey/journey_6.png';
 import journey_7 from '../../assets/about_journey/journey_7.jpg';
-import journey_8 from '../../assets/about_journey/journey_extra1.jpg';
+// import journey_8 from '../../assets/about_journey/journey_extra1.jpg';
 
 
 const About : React.FC = () => {
@@ -39,23 +39,26 @@ const About : React.FC = () => {
                 <Parallax bgImage={journey_5} strength={400} className='relative text-center overflow-hidden width-screen object-cover'>
                     <h1 className='para_1 w-9/12'>LIKE EVERYONE ELSE</h1>    
                 </Parallax>
-                <Parallax bgImage={journey_6} strength={400} className='relative overflow-hidden width-screen object-cover'>
-                    <h1 className='para_1 w-10/12 relative -left-60'>I STARTED OUT FROM THE BOTTOM</h1>    
+                <Parallax strength={400} className='relative overflow-hidden width-screen object-cover text-center'>
+                    <h1 className='para_lone'>I STARTED OUT FROM THE BOTTOM</h1>    
                 </Parallax>
                 <Parallax bgImage={journey_7} strength={400} className='relative overflow-hidden width-screen object-cover'>
                     <h1 className='para_1'>WORKED MY WAY UP</h1>    
                 </Parallax>
-                <Parallax bgImage={journey_8} strength={400} className='relative overflow-hidden width-screen object-cover'>
-                    <h1 className='para_1 w-9/12'>IMPROVED FURTHER THAN IMAGINED</h1>    
+                <Parallax strength={400} className='relative overflow-hidden width-screen object-cover'>
+                    <h1 className='para_lone'>IMPROVED FURTHER THAN IMAGINED</h1>    
                 </Parallax>
                 <Parallax bgImage={journey_1} strength={400} className='relative overflow-hidden width-screen object-cover'>
-                    <h1 className='para_1'>I HAVE FRIENDS</h1>    
+                    <h1 className='para_1'>I GOT MY FRIENDS</h1>    
                 </Parallax>
                 <Parallax bgImage={journey_2} strength={400} className='relative overflow-hidden width-screen object-cover'>
-                    <h1 className='para_2'>I HAVE COLLEAGUES</h1>    
+                    <h1 className='para_2'>MY COLLEAGUES</h1>    
                 </Parallax>
                 <Parallax bgImage={journey_3} strength={400} className='relative overflow-hidden width-screen object-cover'>
-                    <h1 className='para_3'>I GOT CLASSMATES</h1>    
+                    <h1 className='para_3'>EVEN MY CLASSMATES</h1>    
+                </Parallax>
+                <Parallax strength={400} className='relative overflow-hidden width-screen object-cover'>
+                    <h1 className='para_lone'>I GOT LUCKY</h1>    
                 </Parallax>
                 <Parallax bgImage={journey_4} strength={400} className='relative overflow-hidden width-screen object-cover'>
                     <h1 className='para_4'>It all starts with the right group of people</h1>    

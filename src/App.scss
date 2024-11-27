@@ -83,11 +83,11 @@
 /*#endregion Variables */
 }
 
-/*region Prerequisites */
+/*#region Prerequisites */
 html {
     scroll-behavior: smooth;
 }
-/*endregion Prerequisites */
+/*#endregion Prerequisites */
 
 
 /*#region Header */
@@ -182,6 +182,14 @@ html {
 }
 /*#endregion Nav Menu */
 
+
+/*#region Header Mobile Friendly */
+
+/*#endregion Header Mobile Friendly */
+
+
+
+
 /*#region Home */
 .home_content {
     display: flex;
@@ -212,7 +220,32 @@ html {
 /*#endregion Home */
 
 
-/*region About */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#region About */
 .about_quote {
     font-family: var(--ff-maison_black);
 }
@@ -230,6 +263,16 @@ html {
     opacity: 90%;
     margin: 20rem;
 }
+
+.para_lone {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 90%;
+    margin: 20rem;
+}
+
 .para_2 {
     font-size: 6rem;
     text-align: center;
@@ -288,9 +331,9 @@ html {
     50% { border-color: black; }
 }
 
-/*endregion About */
+/*#endregion About */
 
-/*region Experience */
+/*#region Experience */
 .exp_quote {
     font-family: var(--ff-maison_black);
     font-size: 8rem;
@@ -414,10 +457,9 @@ html {
     border-radius: 8px;
     display: block;
 }
-/*endregion Experience */
+/*#endregion Experience */
 
-
-/*region Portfolio */
+/*#region Portfolio */
 .portfolio_quote {
     font-family: var(--ff-maison_black);
     font-size: 8rem;
@@ -585,10 +627,9 @@ html {
     border-radius: 10px;
     height: 500px;
 }
-/*endregion Portfolio */
+/*#endregion Portfolio */
 
-
-/*region Contact */
+/*#region Contact */
 #contact_quote {
     font-family: var(--ff-maison_black);
     font-size: 5rem;
@@ -697,9 +738,9 @@ html {
     opacity: 70%;
     cursor: pointer;
 }
-/*endregion Contact */
+/*#endregion Contact */
 
-/*region Footer */
+/*#region Footer */
 .foot_cont {
     display: flex;
     box-sizing: border-box;
@@ -832,4 +873,4 @@ html {
         color: var(--clr-primary);
     }
 }
-/*endregion Footer */
+/*#endregion Footer */

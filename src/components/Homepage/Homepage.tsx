@@ -20,7 +20,7 @@ const Homepage : React.FC = () => {
     return (
         <>
             <div className="header_cont">
-                <div className="header_content">
+                <div className="header_content flex flex-row items-left justify-between gap-4 lg:gap-2 px-4">
                     <img src={logo} alt="logo" id='logo_img' onClick={toggleMenu} />
                     <div className="infScroll_cont">
                         <Link to='contact' smooth={true} duration={500} onClick={toggleMenu} className='link_btns'>
