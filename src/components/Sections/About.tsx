@@ -32,7 +32,7 @@ const About : React.FC = () => {
     return (
         <>
             <div className="about_cont flex flex-col items-center">
-                <section className= "text-center text-5xl py-12 w-9/12">
+                <section className="text-center text-5xl py-12 w-9/12">
                     <h1 className='about_quote my-20'>THE UNVEILING</h1>
                 </section>
 

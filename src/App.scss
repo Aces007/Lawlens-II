@@ -123,14 +123,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.infScroll_text {
-    font-family: var(--ff-maison_med);
-    color: var(--clr-main-accent);
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 5s linear infinite;
+    
+    .infScroll_text {
+        font-family: var(--ff-maison_med);
+        color: var(--clr-main-accent);
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll 5s linear infinite;
+    }
 }
 
 @keyframes scroll {
@@ -182,13 +182,69 @@ html {
 }
 /*#endregion Nav Menu */
 
-
 /*#region Header Mobile Friendly */
+    /*#region Tablet */
+        @media (max-width: 1024px) and (max-height: 768px){
+            .header_content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                gap: 240px;
+                margin-block: 20px;
+            }
 
+            #logo_img {
+                width: 85px;
+                height: 85px;
+                cursor: pointer;
+            }
+
+            .infScroll_cont {
+                width: 200px;
+                height: 40px;
+            }
+
+            .menu {
+                position: fixed;
+                top: 50px;
+                left: -100%;
+                width: max-content;
+                margin-inline: -9rem;
+            }
+        }
+
+        @media (max-width: 768px) and (max-height: 1024px) {
+            .header_content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                gap: 200px;
+                margin-block: 20px;
+            }
+
+            #logo_img {
+                width: 85px;
+                height: 85px;
+                cursor: pointer;
+            }
+
+            .infScroll_cont {
+                width: 210px;
+                height: 50px;
+            }
+
+            .menu {
+                position: fixed;
+                top: 55px;
+                left: -100%;
+                width: max-content;
+                margin-inline: -8rem;
+            }
+        }
+    /*#endregion Tablet */
 /*#endregion Header Mobile Friendly */
-
-
-
 
 /*#region Home */
 .home_content {
@@ -219,40 +275,40 @@ html {
 }
 /*#endregion Home */
 
+/*#region Home Mobile Friendly */
+    /*#region Tablet */
+        @media (max-width: 1024px) and (max-height: 768px) {
+            .home_content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                width: 100%;
+                gap: 40px;
+            }
+        } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        @media (max-width: 768px) and (max-height: 1024px) { 
+            .home_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                width: 100%;
+                gap: 40px;
+            }
+        }
+    /*#endregion Tablet */
+/*#endregion Home Mobile Friendly */
 
 
 /*#region About */
 .about_quote {
     font-family: var(--ff-maison_black);
-}
-
-.span_words {
-    font-size: 6rem;
-    font-family: var(--ff-maison_black);
+    font-size: 10rem;
 }
 
 .para_1 {
@@ -298,6 +354,11 @@ html {
     margin: 20rem;
 }
 
+.span_words {
+    font-size: 6rem;
+    font-family: var(--ff-maison_black);
+}
+
 .scroll-section {
     min-height: 100vh;
     display: flex;
@@ -310,7 +371,7 @@ html {
     font-size: 1.5rem;
     text-transform: uppercase;
     overflow: hidden;
-    border-right: 1px solid var(--clr-text);
+    border-right: 1px solid var(--clr-primary);
     width: 0; 
     opacity: 0;
 }
@@ -328,10 +389,83 @@ html {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: black; }
+    50% { border-color: var(--clr-primary); }
 }
-
 /*#endregion About */
+
+/*#region About Mobile Friendly */
+    /*#region Tablet */
+        @media (max-width: 1024px) and (max-height: 768px) {
+            .about_quote {
+                font-size: 9rem;
+            }
+
+            .para_1, 
+            .para_lone, 
+            .para_2, 
+            .para_3, 
+            .para_4 {
+                font-size: 4rem;
+                outline: 2px solid lime;
+                margin: 27rem;
+            }
+            
+            .span_words {
+                font-size: 5rem;
+            }            
+
+            .scroll-section {
+                padding: 4rem;
+                justify-content: flex-start;
+            }
+
+            .text-container {
+                font-size: 1.3rem;
+            }
+
+            .typing-animation {
+                animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+            }
+        } 
+        
+        @media (max-width: 768px) and (max-height: 1024px) {
+            .about_quote {
+                font-size: 9rem;
+            }
+
+            .para_1, 
+            .para_lone, 
+            .para_2, 
+            .para_3, 
+            .para_4 {
+                font-size: 4rem;
+                margin: 27rem;
+            }
+            
+            .para_2 {
+                width: max-content;
+            }
+        
+            .span_words {
+                font-size: 5rem;
+            }            
+
+            .scroll-section {
+                padding: 4rem;
+                justify-content: flex-start;
+            }
+
+            .text-container {
+                font-size: 1.3rem;
+            }
+
+            .typing-animation {
+                animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+            }
+        }
+    /*#endregion Tablet */
+/*#endregion About Mobile Friendly */
+
 
 /*#region Experience */
 .exp_quote {
