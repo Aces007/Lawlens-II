@@ -36,7 +36,7 @@ const Portfolio = () => {
         {
             projName: "Hardware Sugar",
             startDate: "September 2023",
-            projBase: "Figma",
+            projBase: "Figma Design",
             projImage: [images.HWI, images.HWII, images.HWIII],
             projOrient: "portrait",
             projTags : ["Figma", "UI/UX Design", "Website Reimagination"]
@@ -60,7 +60,7 @@ const Portfolio = () => {
         {
             projName: "Revizio",
             startDate: "September 2024",
-            projBase: "Figma",
+            projBase: "Figma Design",
             projImage: [images.revizio, images.revizioII, images.revizioIII, images.revizioIV],
             projOrient: "portrait",
             projTags : ["Figma", "UI/UX Design", "System Development", "App Dev"]
